@@ -1,0 +1,248 @@
+*{ 
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: linear-gradient(to top left, #210f3b, #540a30);
+}
+.house,.house_wall{
+	position: relative;
+}
+.house_wall{
+	width: 300px;
+	height: 300px;
+	border: 1px solid #401e01;
+	left: 50px;
+	background: repeating-linear-gradient(180deg,#ffe563, #f5d327 30px, #F6EFD2 30px, #CEAD78 40px);
+}
+.house_roof{
+	width: 0px;
+	height: 0px;
+	border-left: 200px solid transparent;
+	border-right: 200px solid transparent;
+	border-bottom: 201px solid #ed2898;
+}
+.roof_chimney{
+	z-index: -1;
+	position: relative;
+	width: 30px;
+	height: 50px;
+	top: 30px;
+	left:50px;
+	background: linear-gradient(to top, #ff8400, #CEAD78);
+}
+.wall_window{
+	position: relative;
+	width: 80px;
+	height: 100px;
+	top: 80px;
+	left:40px;
+	border: 10px solid #401e01;
+	background: radial-gradient(at top, #FEFFFF, #6ae9fc);
+	
+}
+.window_frame__hor{
+	width: 96px;
+	top: 45px;
+	right: 10px;
+	border: 2px solid #401e01;
+	position: relative;
+}
+
+.wall_door{
+	position: relative;
+	width: 90px;
+	height: 150px;
+	top: 30px;
+	left: 180px;
+	border-radius: 50px 50px 0 0;
+	background: radial-gradient(at top, #ff63a7, #ed2898);
+}
+.door_handle{
+	position: relative;
+	width: 10px;
+	height: 10px;
+	left: 10px;
+	top:80px;
+	background: black;
+	border-radius: 50%;
+}
+
+/*Второй дом*/
+.house2,.house_wall2,.house_roof2{
+	position: absolute;
+}
+.house_wall2{
+	width: 250px;
+	height: 250px;
+	left: 385px;
+	bottom:0px;
+	background: linear-gradient(to top left, powderblue, pink);
+}
+.house_roof2{
+	z-index: 1;
+	width: 100px;
+	height: 0px;
+	border-left: 120px solid transparent;
+	border-right: 120px solid transparent;
+	border-bottom: 101px solid #e677d5;
+	border-radius: 20%;
+	left: 340px;
+	bottom:240px;
+}
+.wall_window2_r{
+	z-index: 2;
+	position: absolute;
+	width: 70px;
+	height: 30px;
+	bottom: 280px;
+	left: 90px;
+	border-radius: 50px 50px 0 0;
+	background: #6ae9fc
+}
+.wall_window2_w{
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	top: 60px;
+	left:130px;
+	border: 4px solid #e677d5;
+	background: radial-gradient(at top, #FEFFFF, #6ae9fc);
+}
+.window_frame__hor2,.window_frame__vert2{
+	width: 80px;
+	top: 40px;
+	right: 0px;
+	border: 2px solid #e677d5;
+	position: absolute;
+}
+.window_frame__vert2{
+	transform: rotate(90deg);
+}
+.wall_door2{
+	position: absolute;
+	width: 70px;
+	height: 150px;
+	top: 100px;
+	left: 40px;
+	border-radius: 50px 50px 0 0;
+	background: #9d14ff
+}
+.door_handle2{
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	left: 10px;
+	top:80px;
+	background: black;
+	border-radius: 50%;
+}
+/*Третий дом*/
+.house3,.house_wall3{
+	position: fixed;
+}
+.house_wall3{
+	position: fixed;
+	width: 300px;
+	height: 400px;
+	margin: -400px 0px 0px 660px;
+	background: #717b99;
+}
+.house_roof3{
+	z-index: 1;
+	position: fixed;
+	width: 130px;
+	height: 0px;
+	border-left: 120px solid transparent;
+	border-right: 120px solid transparent;
+	border-bottom: 50px solid #97f235;
+	margin: -450px 0px 0px 625px;
+}
+.wall_window3_1{
+	position: fixed;
+	width: 80px;
+	height: 100px;
+	top: 150px;
+	left:700px;
+	border: 4px solid #e677d5;
+	background: radial-gradient(at top, #FEFFFF, #6ae9fc);
+}
+.wall_window3_2{
+	position: fixed;
+	width: 80px;
+	height: 100px;
+	top: 150px;
+	left:830px;
+	border: 4px solid #e677d5;
+	background: radial-gradient(at top, #FEFFFF, #6ae9fc);
+}
+.wall_window3_3{
+	position: fixed;
+	width: 80px;
+	height: 100px;
+	top: 280px;
+	left:700px;
+	border: 4px solid #e677d5;
+	background: radial-gradient(at top, #FEFFFF, #6ae9fc);
+}
+.wall_window3_4{
+	position: fixed;
+	width: 80px;
+	height: 100px;
+	top: 280px;
+	left:830px;
+	border: 4px solid #e677d5;
+	background: radial-gradient(at top, #FEFFFF, #6ae9fc);
+}
+.wall_door3{
+	position: fixed;
+	width: 70px;
+	height: 100px;
+	top: 403px;
+	left: 770px;
+	background: #9d14ff
+}
+.door_handle3{
+	position: fixed;
+	width: 10px;
+	height: 10px;
+	left: 780px;
+	top:450px;
+	background: black;
+	border-radius: 50%;
+}
+/*Четвертый дом*/
+.house4,.house_wall4{
+	position: static;
+}
+.house_wall4{
+	width: 250px;
+	height: 250px;
+	margin-left: 40px;
+	background: linear-gradient(to top left, powderblue, pink);
+}
+.house_roof4{
+	position: static;
+	width: 100px;
+	height: 0px;
+	border-left: 120px solid transparent;
+	border-right: 120px solid transparent;
+	border-bottom: 101px solid #ffa200;
+}
+.wall_window4_w{
+	position: static;
+	width: 80px;
+	height: 80px;
+	margin: 0px 0px 0px 120px;
+	border: 4px solid #e677d5;
+	background: #6ae9fc;
+}
+.wall_door4{
+	position: static;
+	width: 70px;
+	height: 150px;
+	margin: 0px 0px 0px 20px;
+	border-radius: 50px 50px 0 0;
+	background: #9d14ff
+}
